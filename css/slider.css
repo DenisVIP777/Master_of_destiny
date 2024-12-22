@@ -1,0 +1,123 @@
+/*Слайдер*/
+.slick-slider{}
+/*Ограничивающая оболочка*/
+.slick-list{
+	
+}
+/*Лента слайдов*/
+.slick-track{
+	
+}
+
+/*Слайд*/
+.slick-slide{}
+/*Слайд активный*/
+.slick-slide.slick-active{}
+/*Слайд основной*/
+.slick-slide.slick-current{}
+/*Слайд по цунтру*/
+.slick-slide.slick-center{}
+
+/*Стрелка*/
+.slick-arrow{}
+/*Стрелка влево*/
+.slick-arrow.slick-prev{}
+/*Стрелка вправо*/
+.slick-arrow.slick-next{}
+/*Стрелка не активная*/
+.slick-arrow.slick-disabled{}
+
+/*Точки*/
+.slick-dots{}
+.slick-dots li{}
+.slick-dots button{}
+
+
+
+
+
+/*main_slider swiper*/
+.main_slider {
+    width: 100%;
+    overflow: hidden;
+	position: relative;
+    z-index: 2;
+}
+.swiper-container {
+    
+}
+.main_slider_wrapper {
+    
+}
+.swiper-wrapper {
+}
+.main_slider_slide {
+	
+}
+.swiper-slide {
+}
+.main_slider_content {
+	font-family: 'Montserrat-Regular', sans-serif;
+	font-weight: 400;
+	font-size: 22px;
+	color: #000;
+	overflow-y: auto;
+	/*height: 648px;*/
+	height: 748px;
+}
+.main_slider_content::-webkit-scrollbar {
+	width: 5px;
+}
+@media(max-width:767px){
+	.main_slider_content::-webkit-scrollbar {
+		width: 3px;
+	}
+}
+.main_slider_content::-webkit-scrollbar-track {
+	background-color: #f5f5f5;
+	border-radius: 3px;
+}
+.main_slider_content::-webkit-scrollbar-thumb {
+	background-color: #c3c3c3;
+	border-radius: 3px;
+}
+@media(max-width:1920px){
+	.main_slider_content {
+		font-size: calc(10px + (22 - 10) * ((100vw - 320px) / (1920 - 320)));
+		/*height: calc(247px + (648 - 247) * ((100vw - 320px) / (1920 - 320)));*/
+		height: calc(247px + (748 - 247) * ((100vw - 320px) / (1920 - 320)));
+	}
+}
+.container_buttons_slider {
+	padding-top: 31px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 214px;
+	margin: 0 auto;
+}
+@media(max-width:1920px){
+	.container_buttons_slider {
+		padding-top: calc(10px + (31 - 10) * ((100vw - 320px) / (1920 - 320)));
+		max-width: calc(84px + (214 - 84) * ((100vw - 320px) / (1920 - 320)));
+	}
+}
+.main_slider_button {
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+@media(max-width:1920px){
+	.main_slider_button {
+		width: calc(21px + (50 - 21) * ((100vw - 320px) / (1920 - 320)));
+		height: calc(21px + (50 - 21) * ((100vw - 320px) / (1920 - 320)));
+	}
+}
+.button_prev {
+}
+.button_next {
+}
+.svg_icon_button {
+	width: 100%;
+	height: 100%;
+}
